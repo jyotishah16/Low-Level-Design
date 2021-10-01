@@ -1,7 +1,6 @@
 #include <iostream>
 #include <tictactoe.h>
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main(){
@@ -15,8 +14,8 @@ int main(){
 
     TicTacToe game(p1, p2);
     game.play();
-    /*
-	TicTacToe game(3);
+    
+    TicTacToe game(3);
     int moves = 0;
 	while(true){
 		cout << "Player 1 move" <<endl;
@@ -24,23 +23,23 @@ int main(){
 		cin >> x >> y;
 
 		int res = game.move(0, x, y);
-		if(res==1){
+		if(res == 1){
 			cout << "Player 1 won" <<endl;
 			break;
 		}
-		else if(moves >=4){
+		else if(moves >= 4){
 			cout <<" Draw" <<endl;
 			break;
 		}
 		cout << "Player 2 move" <<endl;
 		cin >> x >> y;
 		res = game.move(1, x, y);
-		if(res==2){
+		if(res == 2){
 			cout << "Player 1 won" <<endl;
 			break;
 		}
 		moves++;
 	}
-    */
+        cout << "Moves " << moves; 
 	return 0;
 }
