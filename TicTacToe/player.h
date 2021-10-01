@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
-
+using namespace std; 
 class Player{
 public:
-	std::string name;
+	string name;
 	int numericId;
 	bool isWin;
-	std::vector<std::pair<int, int>> movesList;
+	vector<pair<int, int>> movesList;
 public:
     Player();
-	Player(std::string &name, int id);
+	Player(string &name, int id);
 
     void move(int i, int j);
 };
